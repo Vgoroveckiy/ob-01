@@ -25,3 +25,18 @@ class Warrior:
         print(f"Сила: {self.power}")
         print(f"Выносливость: {self.endurance}")
         print(f"Цвет волос: {self.hair_color}")
+
+
+warrior1 = Warrior("Иван", 10, 15, "черный")
+warrior2 = Warrior("Алексей", 12, 14, "русый")
+warrior3 = Warrior("Дмитрий", 11, 16, "каштановый")
+
+warriors = [warrior1, warrior2, warrior3]
+
+for warrior in warriors:
+    warrior.info()
+    warrior.sleep()
+    warrior.eat()
+    warrior.hit()
+    warrior.walk()
+    warrior.info()
